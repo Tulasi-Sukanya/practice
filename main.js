@@ -128,6 +128,68 @@
 // else{
 //     console.warn("Enter Correct Inputs");
 // }
+// num1=-10
+// num2=50
+// here var is global declaration let is a private variable
+// var sum=0 
+// if(num1>0 && num2>0){
+//     var sum
+//     sum=num1+num2
+//     console.log(sum*sum);
+// }
+// else if(num1<0 ^ num2<0){
+//     let diff
+//     diff=num1-num2
+//     console.log(diff*diff*diff);
+// }
+// else{
+//     console.warn("Enter Correct Inputs");
+// }
+// console.log(sum);
+// console.log(diff);
+// A program can be written in many ways for ex:
+// gender='F'
+// age=17
+// if(gender=="M"){
+//     if(age>=21){
+//         console.log("You are eligible to vote");
+//     }
+//     else{
+//         console.log("You are not eligible to vote..");
+//     }
+// }
+// else{
+//     if(gender=="F"){
+//         if(age>=18){
+//             console.log("She can vote");
+//         }
+//         else{
+//         console.log("she cannot vote");
+//         }
+//     }
+// }
+// (or)
+// gender='F'
+// age=17
+// if(gender==="M" && age>=21){
+//     console.log("He can vote");
+// }else if(gender==="F" && age>=18){
+//     console.log("She can vote");
+// }
+// else{
+//     console.log("You cannot vote");
+// }
+// (or)
+// gender='F'
+// age=17
+// if((gender==="M" && age>=21) || (gender==="F" && age>=18)){
+//     let name="sukku"
+//     console.log("You can vote");
+// }
+// else{
+//     console.log("You cannot vote");
+// }
+// console.log(name);
 // ternary operators(? & :):SYNTAX:condition?true:false
 // const someValue=10
 // someValue>0?console.log("positive"):console.log("negative")
@@ -226,11 +288,88 @@
 // console.log(`my name is ${user[0].name}`);
 // console.log(`my city is ${user[1].address.city}`);
 // console.log(`my hobbies are ${user[2].hobbies[0]}`);
+// Spread operator in Arrays:
 // here arrr1 elements are copied to arr2 both arr1 & arr2 are placed in same memory location.
 // arr1=[10,20,30,40,50]
 // arr2=arr1
 // console.log(arr2);
-// here we are creating a physical array by using spread operator.it copies elements and both have different memory location. and 
+// here we are creating a physical array by using spread operator.it copies elements and both have different memory location.they are not pointing each other.
+// arr1=[10,20,30,40,50]
+// arr2=[...arr1]
+// console.log(arr2);
+// arr1[5]=60
+// console.log(arr1);
+// console.log(arr2);
+// arr2[5]=100
+// console.log(arr2);
+// changes can be done on both arrays.but arr1 changes will not appear on arr2 and vice versa bcz of using spread operator
+// Spread Operator in Objects:
+// const obj1={
+//     product:'mobile',
+//     company:'VisualViewport',
+//     version:6,
+//     core:'octa'
+// }
+// const obj2={...obj1}
+// console.log(obj1);
+// console.log(obj2);
+// obj2.price=17000
+// console.log(obj2);
+// obj1.discounted='yes'
+// console.log(obj1)
+// Loops:for loop,while loop,do while loop
+// for loop:For any repititive operations we use for loops.Syntax: for(intial value;condition;increment/decrement){//code}   index-0 to (n-1)
+// const ages=[16,18,23,27,29,10,50,60,80] 
+// console.log(ages);
+// for(let i=0;i<ages.length;i+=1){
+//     console.log(ages[i]);
+// }
+// for(let i=0;i<=ages.length;i++){
+//     if(ages[i]>=18){
+//         console.log(`${ages[i]},you are eligible to vote..`);
+//     }
+//     else{
+//         console.log(`${ages[i]},you are not eligible to vote..`);
+//     }
+// }
+// table example:
+// number=45
+// for(let num=number;num<=number*10;num+=number){
+//     console.log(`${number} x ${num/number} = ${num} `);
+// }
+// for(let i=number;i<=number*10;i+=number){
+//     console.log(`${number} x ${i/number} = ${i} `);
+// }
+// While:These loops are used when u dont know start and end points.
+// Q-print the values of the array until zero appears.
+// to print arr values
+// values=[10,20,-16,68,20,-16,0,19,56,-19]
+// let variable=0
+// while(variable<=values.length){
+//     console.log(values[variable]);
+//     variable+=1
+// }
+// until zero 
+// values=[10,20,-16,68,20,-16,0,19,56,-19]
+// let variable=0
+// while(values[variable]!=0){
+//     console.log(values[variable]);
+//     variable+=1
+// }
+// do-while loop:Never used..just like while loop.the one and only difference condition is written in while and executing statements are in do loop.it is also called as entry controlled loop or exit controlled loop.
+// Q-print the values of the array until zero appears.
+// values=[10,20,-16,68,20,-16,0,19,56,-19]
+// let variable=0
+// do{
+//     console.log(values[variable]);
+//     variable+=1
+// }
+// while(values[variable]!=0)
+
+
+
+
+
 
 
 
