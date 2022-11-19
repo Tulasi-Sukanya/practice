@@ -155,13 +155,84 @@
 // console.log(fruits.length);
 // console.log(fruits[3]);
 // console.log(Array.isArray(fruits));
-NestedArray:    00,01,02,03,04, 10,11,12,13,14,  20, 21, 22, 23, 24,   30, 31, 32, 33, 34
-const myArray=[[1, 2, 3, 4, 5],[10,20,30,40,50],[100,200,300,400,500],[111,222,333,444,555]]
-console.log(myArray[2][2]);
-console.log(myArray[3]);
-console.log(myArray[4]);
-myArray[4]=[5,10,15,20]
-console.log(myArray);
+// NestedArray:    00,01,02,03,04, 10,11,12,13,14,  20, 21, 22, 23, 24,   30, 31, 32, 33, 34
+// const myArray=[[1, 2, 3, 4, 5],[10,20,30,40,50],[100,200,300,400,500],[111,222,333,444,555]]
+// console.log(myArray[2][2]);
+// console.log(myArray[3]);
+// console.log(myArray[4]);
+// myArray[4]=[5,10,15,20]
+// console.log(myArray);
+// console.log(myArray.length);
+// creating a Object:
+// const user={
+//     name:"Sri" ,
+//     age:22 ,
+//     graduated: true ,
+//     maried:false ,
+//     hobbies:["singing","drawing","cooking","games"] ,
+//     address:{
+//         city:'Nellore',
+//         mandal:'buchi',
+//         state:'Andhrapradesh' 
+//     }
+// }
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.graduated);
+// console.log(user.maried);
+// console.log(user.hobbies[2]);
+// console.log(user.hobbies[3]);
+// console.log(user.address.city);
+// console.log(`myaddress is user ${user.address}`);
+// console.log(`my hobbies are ${user.hobbies[3]}`);
+// creating an array of objects:[{},{},{},{},{},.....]
+// const user=[
+//     {
+//         name:"Sri" ,
+//         age:22 ,
+//         graduated: true ,
+//         maried:false ,
+//         hobbies:["singing","drawing","cooking","games"] ,
+//         address:{
+//             city:'Nellore',
+//             mandal:'buchi',
+//             state:'Andhrapradesh' 
+//         }
+//     }    ,
+// {
+//     name:"Suu.." ,
+//         age:26 ,
+//         graduated: true ,
+//         maried:false ,
+//         hobbies:["singing","drawing","cooking","games"] ,
+//         address:{
+//             city:'SPSR NLR',
+//             mandal:'KBP',
+//             state:'AP' 
+//         }   
+// },
+// {
+//     name:"swe.." ,
+//         age:27 ,
+//         graduated: true ,
+//         maried:false ,
+//         hobbies:["singing","cooking","games"] ,
+//         address:{
+//             city:'HYD',
+//             mandal:'AMPT',
+//             state:'TN' 
+//         }
+// }]
+// console.log(`my name is ${user[0].name}`);
+// console.log(`my city is ${user[1].address.city}`);
+// console.log(`my hobbies are ${user[2].hobbies[0]}`);
+// here arrr1 elements are copied to arr2 both arr1 & arr2 are placed in same memory location.
+// arr1=[10,20,30,40,50]
+// arr2=arr1
+// console.log(arr2);
+// here we are creating a physical array by using spread operator.it copies elements and both have different memory location. and 
+
+
 
 
 
