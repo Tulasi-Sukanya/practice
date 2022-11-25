@@ -365,14 +365,68 @@
 //     variable+=1
 // }
 // while(values[variable]!=0)
-
-
-
-
-
-
-
-
+// Functions:Functions are basically a way of creating separate block of code to reuse it throught out the appliction.
+// syntax of  a function:functionname (parameters){
+//     ..your operations
+// }
+// functionname(parameter values)
+// Q-u are given with 2 no's give answer as sum 
+// function sum(num1,num2){
+//     console.log(num1+num2);
+// }
+// sum(100,200)
+// Q-given 2 no's add thae values and generate the square pf the sum.
+// function square(num1,num2){
+//     return num1*num2;
+// }
+// const sqr=square(10,20)
+// console.log(sqr);
+// const sqr1=square(12,15)
+// console.log(sqr1);
+// console.log( sqr , sqr1)
+// // Q-U are given with marksof students in 5 subjects u have to tell weather u pass >30 or fail.<30 or Given an array find the sum of elements or cube the sum or check if sum >200 or not.
+// function sum(marks){
+//     summation=0;
+//     for(let i=0; i<marks.length; i++){
+//         summation+=1;
+//     }
+//     return summation;
+// }
+// const add=(sum([10,20,30,44,55]));
+// console.log(add);
+// Es6 Arrow Functions:
+// Basic Array & Array Constructor:
+// Array Methods:
+// ES6 Higher order Array methods:1.forEach() 2.map() 3.filter() 4.reduce() 5.sort()
+const employees=[
+    {id:10001 , name:'employee1', designation:"IT",start:1980 , end:1990 },
+    {id:10002 , name:'employee2', designation:"HR",start:1985 , end:2000 },
+    {id:10003, name:'employee3', designation:"IT",start:1986 , end:2020 },
+    {id:10004 , name:'employee4', designation:"HR",start:1987 , end:2005 },
+    {id:10005 , name:'employee5', designation:"IT",start:1982, end:2008},
+    {id:10006, name:'employee6', designation:"MECH",start:1989 , end:2009 },
+    {id:10007 , name:'employee7', designation:"IT",start:1987, end:2018 },
+    {id:10008, name:'employee8', designation:"HR",start:1985, end:2022 },
+    {id:10009, name:'employee9', designation:"IT",start:1990, end:2001 }
+]
+// Q- from emp array ,loop around the array and print the name of each employee.
+    // console.log(employees);
+    // console.log(employees[1].name);
+for(let emp=0; emp<employees.length; emp++){
+    console.log(employees);
+    console.log(employees[emp].name);
+    console.log(employees[emp].id);
+}
+// forEach:
+employees.forEach((emp)=>{console.log(emp)});
+employees.forEach((emp)=>{console.log(emp.name)});
+employees.forEach((emp)=>{console.log(emp.designation)});
+employees.forEach((emp,index)=>{console.log(emp.id,index)});
+// map:
+employees.map((emp,index)=>{console.log(emp.name)});
+employees.map((emp,index)=>{console.log(emp.name,index)});
+// filter:
+employees.filter((emp)=>{console.log(emp.end - emp.start)});
 
 
 
