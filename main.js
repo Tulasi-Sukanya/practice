@@ -409,6 +409,7 @@ const employees=[
     {id:10008, name:'employee8', designation:"HR",start:1985, end:2022 },
     {id:10009, name:'employee9', designation:"IT",start:1990, end:2001 }
 ]
+var ages=[10,28,39,11,35,67,89,54,23,32,89,90,15];
 // Q- from emp array ,loop around the array and print the name of each employee.
     // console.log(employees);
     // console.log(employees[1].name);
@@ -417,16 +418,57 @@ for(let emp=0; emp<employees.length; emp++){
     console.log(employees[emp].name);
     console.log(employees[emp].id);
 }
-// forEach:
+// forEach:Common operation is applied to all elements in an array.it will not return anything..
 employees.forEach((emp)=>{console.log(emp)});
 employees.forEach((emp)=>{console.log(emp.name)});
 employees.forEach((emp)=>{console.log(emp.designation)});
 employees.forEach((emp,index)=>{console.log(emp.id,index)});
-// map:
+// map:It targets particular element in an arrray and performs operastion and it returns output as a array..
 employees.map((emp,index)=>{console.log(emp.name)});
 employees.map((emp,index)=>{console.log(emp.name,index)});
-// filter:
+// filter:it also returns an array.
 employees.filter((emp)=>{console.log(emp.end - emp.start)});
+ages.filter(age => {console.log(age>=18)});
+ages.forEach(age => {console.log(`${age+10}`)});
+ages.map(age => {console.log(`${age%2 == 0}`)})
+// Q-Names of employees whose dept.is IT
+const filterArray=employees.filter(emp => emp.designation === "IT");
+console.log(filterArray);
+const majorArray=ages.filter(age => age>=18);
+console.log(majorArray);
+// sort():it sorts the elements in array and return an array back.1.descending order 2.ascending order
+const sortedAges=ages.sort((n1,n2) =>{
+    if(n1>n2){
+        return -1;
+    }
+    else if(n1<n2){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+});
+console.log(sortedAges);
+const SortedAges=ages.sort((n1,n2) =>{
+    if(n1<n2){
+        return -1;
+    }
+    else if(n1>n2){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+});
+console.log(SortedAges);
+// reduce():
+// syntax:Array.reduce((itr value,intial variable)=>{return operation},intial value)
+const sumofAges=ages.reduce((age,sum)=>{return age+sum},0);
+console.log(sumofAges);
+const productofAges=ages.reduce((age,product)=>{return age * product});
+console.log(productofAges);
+// STRINGS AND ITS METHODS:
+
 
 
 
