@@ -12,19 +12,14 @@ console.log(`2nd redaystate value is ${xhr.readyState}`);
 xhr.onreadystatechange = () => {
 console.log(`3rd redaystate value is ${xhr.readyState}`);
     if(xhr.readyState === 4 && xhr.status === 200){
-        console.log(xhr.responseText);
+        // console.log(xhr.responseText);
+        const response = JSON.parse(xhr.responseText)
+        let output = ''
+        response.forEach( res => {
+                output += `<img style="margin: 10px;" src="${res.avatar_url}" />`
+            })
+        document.querySelector('#main-content').innerHTML = output
     }
 }
-// xhr.onreadystatechange = () => {
-//     console.log(`3rd readyState value ${xhr.readyState}`)
-//     if(xhr.readyState === 4 && xhr.status === 200) {
-//         const response = JSON.parse(xhr.responseText)
-//         let output = ''
-//         response.forEach( res => {
-//             output += `<img style="margin: 10px;" src="${res.avatar_url}" />`
-//         })
-//         document.querySelector('#main-content').innerHTML = output
-//     }
-// }
 // console.cloud.google.com
 xhr.send();

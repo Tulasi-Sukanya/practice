@@ -468,6 +468,41 @@
 // const productofAges=ages.reduce((age,product)=>{return age * product});
 // console.log(productofAges);
 // STRINGS AND ITS METHODS:
+str = "completed with 3 local objects"
+var result = str.split(' ')
+console.log(result);
+var c=str.charAt(5)
+console.log(c);
+console.log(str.startsWith("H"));
+console.log(str.endsWith("H"));
+console.log(str.includes("e"));
+console.log(str.indexOf("3"));
+console.log(str.lastIndexOf("c"));
+console.log(str.repeat("3"));
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.replace("3","5"));
+console.log(str.search("o"));
+console.log(str.slice(1,"6"));
+console.log(str.substring(2,8));
+console.log(str.match(/[a-z]/g));
+console.log(str.match(/[a-z]/i));
+console.log(str.match(/[0-9]/));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
